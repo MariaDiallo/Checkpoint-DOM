@@ -1,0 +1,95 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+main{
+    margin:  10rem;
+    background-color: beige;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0 0.5rem;
+}
+.head-top{
+    width: 63.1rem;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.like{
+    width: 18px;
+    height: 18px;
+}
+.like img {
+    width: 100%;
+}
+.body{
+    margin-top: 0.5rem;
+}
+.image-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1.5rem 0 0.5rem ;
+}
+.image{
+    width: 100px;
+    height: 100px;
+}
+.image img{
+    width: 100%;
+}
+.nom{
+    font-weight: bold;
+    font-size: 18px;
+}
+.Prix-Unitaire input{
+    width: 50px;
+}
+.Quantité{
+    display: flex;
+}
+.Quantité input{
+    width: 40px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.Quantité button{
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+}
+span{
+    font-weight: bold;
+}
+.buttom{
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0.5rem;
+}
+.btn-pu input{
+    width: 40px;
+}
+.addart{
+    height: 30px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    border-radius: 0.25rem;
+}
+.supprime{
+    width: 18px;
+    height: 18px;;
+}
+.supprime img{
+    width: 100%;
+}

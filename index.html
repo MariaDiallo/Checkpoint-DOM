@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WS-DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header class="head">
+            <div class="head-top">
+                <p>Nom de l'article</p>
+                <p>Prix unitaire</p>
+                <p>Quantité</p>
+                <p>Sous-Total</p>
+            </div>
+            <div class="like">
+                <button>
+                    <img src="images/heart-solid.svg" alt="">
+                </button>
+            </div>
+        </header>
+        <div class="body">
+            <div class="image-text">
+                <div class="image-nom">
+                    <div class="image">
+                        <img src="images/MA.jpg" alt="">
+                    </div>
+                    <div class="nom">
+                        <p>Gateau</p>
+                    </div>
+                </div>
+                <div class="Prix-Unitaire">
+                    <span>1000 fr</span>
+                </div>
+                <div class="Quantité">
+                    <button>-</button>
+                    <input type="text" readonly placeholder="Prix-Unitaire" value="1">
+                    <button>+</button>
+                </div>
+                <div class="Sous-Total">
+                    <span>1000 fr</span>
+                </div>
+            </div>
+            <div class="buttom">
+                <div class="Nom-art">
+                    <input type="text" name="Nom de l'article" placeholder="Nom de l'article"/>
+                </div>
+                <div class="btn-pu">
+                    <input type="number" name="Prix-Unitaire" min="1"/>
+                </div>
+                <div class="addart">Ajouter l'article</div>
+                <div class="supprime">
+                    <button>
+                        <img src="images/trash-solid.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <Script src="script.js"></Script>
+</body>
+</html>
