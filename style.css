@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 main{
+    width: 1050px;
     margin:  10rem;
     background-color: beige;
 }
@@ -23,16 +24,25 @@ main{
     width: 18px;
     height: 18px;
 }
+.on{
+    background-color: red;
+}
 .like img {
     width: 100%;
 }
 .body{
     margin-top: 0.5rem;
 }
-.image-text{
+.image-text-supprime{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.image-text{
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 0 1.5rem 0 0.5rem ;
 }
 .image{
@@ -53,15 +63,38 @@ main{
     display: flex;
 }
 .Quantité input{
-    width: 40px;
-    height: 20px;
+    width: 45px;
+    height: 25px;
     margin-left: 10px;
     margin-right: 10px;
 }
-.Quantité button{
+.moins{
     border-radius: 100%;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out .3s;
+}
+.moins:hover{
+    background-color: red;
+}
+.plus{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out .3s;
+}
+.plus:hover{
+    background-color: red;
 }
 span{
     font-weight: bold;
@@ -73,8 +106,8 @@ span{
     justify-content: space-between;
     margin-left: 0.5rem;
 }
-.btn-pu input{
-    width: 40px;
+.btn-pu {
+    width: 50px;
 }
 .addart{
     height: 30px;
@@ -92,4 +125,13 @@ span{
 }
 .supprime img{
     width: 100%;
+}
+.Total{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Total p{
+    font-weight: bold;
+    font-size: 20px;
 }

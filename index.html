@@ -11,53 +11,61 @@
     <main>
         <header class="head">
             <div class="head-top">
-                <p>Nom de l'article</p>
-                <p>Prix unitaire</p>
+                <p>Nom article</p>
                 <p>Quantité</p>
+                <p>Prix unitaire</p>
                 <p>Sous-Total</p>
             </div>
             <div class="like">
-                <button>
+                <button class="like_img">
                     <img src="images/heart-solid.svg" alt="">
                 </button>
             </div>
         </header>
         <div class="body">
-            <div class="image-text">
-                <div class="image-nom">
-                    <div class="image">
-                        <img src="images/MA.jpg" alt="">
+            <div class="image-text-supprime">
+                <div class="image-text">
+                    <div class="image-nom">
+                        <div class="image">
+                            <img src="images/MA.jpg" alt="">
+                        </div>
+                        <div class="nom">
+                            <p>Gateau</p>
+                        </div>
                     </div>
-                    <div class="nom">
-                        <p>Gateau</p>
+                    <div class="Quantité">
+                        <button class="moins">-</button>
+                        <input type="text" readonly placeholder="Prix-Unitaire" value="1" class="quant">
+                        <button class="plus">+</button>
+                    </div>
+                    <div class="Prix-Unitaire">
+                        <span>1000 fr</span>
+                    </div>
+                    <div class="Soustotal">
+                        <span>1000 fr</span>
                     </div>
                 </div>
-                <div class="Prix-Unitaire">
-                    <span>1000 fr</span>
-                </div>
-                <div class="Quantité">
-                    <button>-</button>
-                    <input type="text" readonly placeholder="Prix-Unitaire" value="1">
-                    <button>+</button>
-                </div>
-                <div class="Sous-Total">
-                    <span>1000 fr</span>
-                </div>
-            </div>
-            <div class="buttom">
-                <div class="Nom-art">
-                    <input type="text" name="Nom de l'article" placeholder="Nom de l'article"/>
-                </div>
-                <div class="btn-pu">
-                    <input type="number" name="Prix-Unitaire" min="1"/>
-                </div>
-                <div class="addart">Ajouter l'article</div>
                 <div class="supprime">
-                    <button>
+                    <button type="button">
                         <img src="images/trash-solid.svg" alt="">
                     </button>
                 </div>
+                
             </div>
+        </div>
+        <div class="buttom">
+            <div>
+                <input type="text" class="Nom-art" name="Nom article" placeholder="Nom article"/>
+            </div>
+            <div>
+                <input type="number" class="btn-pu" name="Prix-Unitaire" step="1" value="1000"/>
+            </div>
+            <div>
+                <button type="button" class="addart">Ajouter un article</button>
+            </div>
+        </div>
+        <div class="Total">
+            <p>Total :</p>
         </div>
         
     </main>
