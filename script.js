@@ -30,6 +30,7 @@ function dinimQuantite(elt) {
     if( elt.nextElementSibling.value > 0){
         elt.nextElementSibling.value--; 
     }
+    Soustotal();
 }
 
 Ajouter.addEventListener('click',addArticle)
@@ -47,7 +48,7 @@ function addArticle() {
     }
     let supprimeAll = document.querySelectorAll('.supprime');
     for (let i = 0; i < supprimeAll.length; i++) {
-        supprimeAll[i].addEventListener('click',supprimeart)
+        supprimeAll[i].addEventListener('click',supprimeArt)
     }
 }
 
@@ -71,11 +72,11 @@ function totalPrix() {
 
 
 
-/*
+
 function Soustotal() {
     let prix = parseInt(document.querySelector('.Prix-Unitaire').innerText);
     let quant = parseInt(document.querySelector('.quant').value)
     let soust = prix*quant;
 
     document.querySelector('.Soustotal').innerText = soust + 'fr';
-}*/
+}
